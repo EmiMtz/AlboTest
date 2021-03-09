@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE555E4725F6FD1000D542D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E4625F6FD1000D542D6 /* AppDelegate.swift */; };
+		DE555E4925F6FD1000D542D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E4825F6FD1000D542D6 /* SceneDelegate.swift */; };
+		DE555E4B25F6FD1000D542D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E4A25F6FD1000D542D6 /* ViewController.swift */; };
+		DE555E4E25F6FD1000D542D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE555E4C25F6FD1000D542D6 /* Main.storyboard */; };
+		DE555E5025F6FD1900D542D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE555E4F25F6FD1900D542D6 /* Assets.xcassets */; };
+		DE555E5325F6FD1900D542D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE555E5125F6FD1900D542D6 /* LaunchScreen.storyboard */; };
+		DE555E5E25F6FD1900D542D6 /* MapTestAlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E5D25F6FD1900D542D6 /* MapTestAlTests.swift */; };
+		DE555E6925F6FD1900D542D6 /* MapTestAlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E6825F6FD1900D542D6 /* MapTestAlUITests.swift */; };
+		DE555E9E25F6FE9500D542D6 /* AirportRadiusSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E9325F6FE9500D542D6 /* AirportRadiusSelectViewController.swift */; };
+		DE555E9F25F6FE9500D542D6 /* AirportRadiusSelectStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE555E9425F6FE9500D542D6 /* AirportRadiusSelectStoryboard.storyboard */; };
+		DE555EA025F6FE9500D542D6 /* AirportRadiusSelectInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E9725F6FE9500D542D6 /* AirportRadiusSelectInteractor.swift */; };
+		DE555EA125F6FE9500D542D6 /* AirportRadiusSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E9925F6FE9500D542D6 /* AirportRadiusSelectPresenter.swift */; };
+		DE555EA225F6FE9500D542D6 /* AirportRadiusSelectContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E9B25F6FE9500D542D6 /* AirportRadiusSelectContracts.swift */; };
+		DE555EA325F6FE9500D542D6 /* AirportRadiusSelectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555E9D25F6FE9500D542D6 /* AirportRadiusSelectRouter.swift */; };
+		DE555EA925F7024800D542D6 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EA825F7024800D542D6 /* ButtonCustom.swift */; };
+		DE555EB125F702BD00D542D6 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EB025F702BC00D542D6 /* Shadow.swift */; };
+		DE555EBA25F70B4A00D542D6 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EB925F70B4A00D542D6 /* RangeSlider.swift */; };
+		DE555EBF25F70BA200D542D6 /* RangeSliderOneTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EBE25F70BA200D542D6 /* RangeSliderOneTrackLayer.swift */; };
+		DE555EC425F70BCB00D542D6 /* RangeSliderOneThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EC325F70BCB00D542D6 /* RangeSliderOneThumbLayer.swift */; };
+		DE555EDE25F7107500D542D6 /* MyMapsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555ED425F7107500D542D6 /* MyMapsInteractor.swift */; };
+		DE555EDF25F7107500D542D6 /* MyMapsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555ED625F7107500D542D6 /* MyMapsRouter.swift */; };
+		DE555EE025F7107500D542D6 /* MyMapsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE555ED825F7107500D542D6 /* MyMapsStoryboard.storyboard */; };
+		DE555EE125F7107500D542D6 /* MyMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555ED925F7107500D542D6 /* MyMapsViewController.swift */; };
+		DE555EE225F7107500D542D6 /* MyMapsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EDB25F7107500D542D6 /* MyMapsPresenter.swift */; };
+		DE555EE325F7107500D542D6 /* MyMapsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EDD25F7107500D542D6 /* MyMapsContracts.swift */; };
+		DE555EE925F7157600D542D6 /* FloatingTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EE825F7157600D542D6 /* FloatingTabBarCell.swift */; };
+		DE555EEE25F715F900D542D6 /* ProtocolUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EED25F715F900D542D6 /* ProtocolUI.swift */; };
+		DE555EF325F716CB00D542D6 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EF225F716CB00D542D6 /* TabBarVC.swift */; };
+		DE555EF825F71A5300D542D6 /* InfoAirportsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EF725F71A5300D542D6 /* InfoAirportsInteractor.swift */; };
+		DE555EFD25F71A8900D542D6 /* InfoAirportsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555EFC25F71A8900D542D6 /* InfoAirportsRouter.swift */; };
+		DE555F0225F71B0500D542D6 /* InfoAirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555F0125F71B0500D542D6 /* InfoAirportsViewController.swift */; };
+		DE555F0725F71B3500D542D6 /* InfoAirportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555F0625F71B3500D542D6 /* InfoAirportPresenter.swift */; };
+		DE555F0C25F71B5100D542D6 /* InfoAirportContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555F0B25F71B5100D542D6 /* InfoAirportContracts.swift */; };
+		DE555F1425F72C6300D542D6 /* PlaceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE555F1325F72C6300D542D6 /* PlaceEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE555E5A25F6FD1900D542D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE555E3B25F6FD1000D542D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE555E4225F6FD1000D542D6;
+			remoteInfo = MapTestAl;
+		};
+		DE555E6525F6FD1900D542D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE555E3B25F6FD1000D542D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE555E4225F6FD1000D542D6;
+			remoteInfo = MapTestAl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE555E4325F6FD1000D542D6 /* MapTestAl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTestAl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE555E4625F6FD1000D542D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE555E4825F6FD1000D542D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE555E4A25F6FD1000D542D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE555E4D25F6FD1000D542D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE555E4F25F6FD1900D542D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE555E5225F6FD1900D542D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE555E5425F6FD1900D542D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE555E5925F6FD1900D542D6 /* MapTestAlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTestAlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE555E5D25F6FD1900D542D6 /* MapTestAlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestAlTests.swift; sourceTree = "<group>"; };
+		DE555E5F25F6FD1900D542D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE555E6425F6FD1900D542D6 /* MapTestAlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTestAlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE555E6825F6FD1900D542D6 /* MapTestAlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestAlUITests.swift; sourceTree = "<group>"; };
+		DE555E6A25F6FD1900D542D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE555E9325F6FE9500D542D6 /* AirportRadiusSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportRadiusSelectViewController.swift; sourceTree = "<group>"; };
+		DE555E9425F6FE9500D542D6 /* AirportRadiusSelectStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AirportRadiusSelectStoryboard.storyboard; sourceTree = "<group>"; };
+		DE555E9725F6FE9500D542D6 /* AirportRadiusSelectInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportRadiusSelectInteractor.swift; sourceTree = "<group>"; };
+		DE555E9925F6FE9500D542D6 /* AirportRadiusSelectPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportRadiusSelectPresenter.swift; sourceTree = "<group>"; };
+		DE555E9B25F6FE9500D542D6 /* AirportRadiusSelectContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportRadiusSelectContracts.swift; sourceTree = "<group>"; };
+		DE555E9D25F6FE9500D542D6 /* AirportRadiusSelectRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportRadiusSelectRouter.swift; sourceTree = "<group>"; };
+		DE555EA825F7024800D542D6 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
+		DE555EB025F702BC00D542D6 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		DE555EB925F70B4A00D542D6 /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		DE555EBE25F70BA200D542D6 /* RangeSliderOneTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderOneTrackLayer.swift; sourceTree = "<group>"; };
+		DE555EC325F70BCB00D542D6 /* RangeSliderOneThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderOneThumbLayer.swift; sourceTree = "<group>"; };
+		DE555ED425F7107500D542D6 /* MyMapsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapsInteractor.swift; sourceTree = "<group>"; };
+		DE555ED625F7107500D542D6 /* MyMapsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapsRouter.swift; sourceTree = "<group>"; };
+		DE555ED825F7107500D542D6 /* MyMapsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyMapsStoryboard.storyboard; sourceTree = "<group>"; };
+		DE555ED925F7107500D542D6 /* MyMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapsViewController.swift; sourceTree = "<group>"; };
+		DE555EDB25F7107500D542D6 /* MyMapsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapsPresenter.swift; sourceTree = "<group>"; };
+		DE555EDD25F7107500D542D6 /* MyMapsContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapsContracts.swift; sourceTree = "<group>"; };
+		DE555EE825F7157600D542D6 /* FloatingTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarCell.swift; sourceTree = "<group>"; };
+		DE555EED25F715F900D542D6 /* ProtocolUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUI.swift; sourceTree = "<group>"; };
+		DE555EF225F716CB00D542D6 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		DE555EF725F71A5300D542D6 /* InfoAirportsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAirportsInteractor.swift; sourceTree = "<group>"; };
+		DE555EFC25F71A8900D542D6 /* InfoAirportsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAirportsRouter.swift; sourceTree = "<group>"; };
+		DE555F0125F71B0500D542D6 /* InfoAirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAirportsViewController.swift; sourceTree = "<group>"; };
+		DE555F0625F71B3500D542D6 /* InfoAirportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAirportPresenter.swift; sourceTree = "<group>"; };
+		DE555F0B25F71B5100D542D6 /* InfoAirportContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAirportContracts.swift; sourceTree = "<group>"; };
+		DE555F1325F72C6300D542D6 /* PlaceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE555E4025F6FD1000D542D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E5625F6FD1900D542D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E6125F6FD1900D542D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE555E3A25F6FD1000D542D6 = {
+			isa = PBXGroup;
+			children = (
+				DE555E4525F6FD1000D542D6 /* MapTestAl */,
+				DE555E5C25F6FD1900D542D6 /* MapTestAlTests */,
+				DE555E6725F6FD1900D542D6 /* MapTestAlUITests */,
+				DE555E4425F6FD1000D542D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE555E4425F6FD1000D542D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E4325F6FD1000D542D6 /* MapTestAl.app */,
+				DE555E5925F6FD1900D542D6 /* MapTestAlTests.xctest */,
+				DE555E6425F6FD1900D542D6 /* MapTestAlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE555E4525F6FD1000D542D6 /* MapTestAl */ = {
+			isa = PBXGroup;
+			children = (
+				DE555ED125F7107400D542D6 /* MyMapsModule */,
+				DE555EA725F7023100D542D6 /* Customizables */,
+				DE555E9125F6FE9500D542D6 /* AirportRadiusSelectModule */,
+				DE555E4625F6FD1000D542D6 /* AppDelegate.swift */,
+				DE555E4825F6FD1000D542D6 /* SceneDelegate.swift */,
+				DE555E4A25F6FD1000D542D6 /* ViewController.swift */,
+				DE555E4C25F6FD1000D542D6 /* Main.storyboard */,
+				DE555E4F25F6FD1900D542D6 /* Assets.xcassets */,
+				DE555E5125F6FD1900D542D6 /* LaunchScreen.storyboard */,
+				DE555E5425F6FD1900D542D6 /* Info.plist */,
+			);
+			path = MapTestAl;
+			sourceTree = "<group>";
+		};
+		DE555E5C25F6FD1900D542D6 /* MapTestAlTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E5D25F6FD1900D542D6 /* MapTestAlTests.swift */,
+				DE555E5F25F6FD1900D542D6 /* Info.plist */,
+			);
+			path = MapTestAlTests;
+			sourceTree = "<group>";
+		};
+		DE555E6725F6FD1900D542D6 /* MapTestAlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E6825F6FD1900D542D6 /* MapTestAlUITests.swift */,
+				DE555E6A25F6FD1900D542D6 /* Info.plist */,
+			);
+			path = MapTestAlUITests;
+			sourceTree = "<group>";
+		};
+		DE555E9125F6FE9500D542D6 /* AirportRadiusSelectModule */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9225F6FE9500D542D6 /* AirportRadiusSelectView */,
+				DE555E9525F6FE9500D542D6 /* AirportRadiusSelectEntity */,
+				DE555E9625F6FE9500D542D6 /* AirportRadiusSelectInteractor */,
+				DE555E9825F6FE9500D542D6 /* AirportRadiusSelectPresenter */,
+				DE555E9A25F6FE9500D542D6 /* AirportRadiusSelectContracts */,
+				DE555E9C25F6FE9500D542D6 /* AirportRadiusSelectRouter */,
+			);
+			path = AirportRadiusSelectModule;
+			sourceTree = "<group>";
+		};
+		DE555E9225F6FE9500D542D6 /* AirportRadiusSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9325F6FE9500D542D6 /* AirportRadiusSelectViewController.swift */,
+				DE555E9425F6FE9500D542D6 /* AirportRadiusSelectStoryboard.storyboard */,
+			);
+			path = AirportRadiusSelectView;
+			sourceTree = "<group>";
+		};
+		DE555E9525F6FE9500D542D6 /* AirportRadiusSelectEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AirportRadiusSelectEntity;
+			sourceTree = "<group>";
+		};
+		DE555E9625F6FE9500D542D6 /* AirportRadiusSelectInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9725F6FE9500D542D6 /* AirportRadiusSelectInteractor.swift */,
+			);
+			path = AirportRadiusSelectInteractor;
+			sourceTree = "<group>";
+		};
+		DE555E9825F6FE9500D542D6 /* AirportRadiusSelectPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9925F6FE9500D542D6 /* AirportRadiusSelectPresenter.swift */,
+			);
+			path = AirportRadiusSelectPresenter;
+			sourceTree = "<group>";
+		};
+		DE555E9A25F6FE9500D542D6 /* AirportRadiusSelectContracts */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9B25F6FE9500D542D6 /* AirportRadiusSelectContracts.swift */,
+			);
+			path = AirportRadiusSelectContracts;
+			sourceTree = "<group>";
+		};
+		DE555E9C25F6FE9500D542D6 /* AirportRadiusSelectRouter */ = {
+			isa = PBXGroup;
+			children = (
+				DE555E9D25F6FE9500D542D6 /* AirportRadiusSelectRouter.swift */,
+			);
+			path = AirportRadiusSelectRouter;
+			sourceTree = "<group>";
+		};
+		DE555EA725F7023100D542D6 /* Customizables */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EB825F70B3100D542D6 /* RangeSlider */,
+				DE555EA825F7024800D542D6 /* ButtonCustom.swift */,
+				DE555EB025F702BC00D542D6 /* Shadow.swift */,
+				DE555EED25F715F900D542D6 /* ProtocolUI.swift */,
+			);
+			path = Customizables;
+			sourceTree = "<group>";
+		};
+		DE555EB825F70B3100D542D6 /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EB925F70B4A00D542D6 /* RangeSlider.swift */,
+				DE555EBE25F70BA200D542D6 /* RangeSliderOneTrackLayer.swift */,
+				DE555EC325F70BCB00D542D6 /* RangeSliderOneThumbLayer.swift */,
+			);
+			path = RangeSlider;
+			sourceTree = "<group>";
+		};
+		DE555ED125F7107400D542D6 /* MyMapsModule */ = {
+			isa = PBXGroup;
+			children = (
+				DE555ED225F7107400D542D6 /* MyMapsEntity */,
+				DE555ED325F7107400D542D6 /* MyMapsInteractor */,
+				DE555ED525F7107500D542D6 /* MyMapsRouter */,
+				DE555ED725F7107500D542D6 /* MyMapsView */,
+				DE555EDA25F7107500D542D6 /* MyMapsPresenter */,
+				DE555EDC25F7107500D542D6 /* MyMapsContracts */,
+			);
+			path = MyMapsModule;
+			sourceTree = "<group>";
+		};
+		DE555ED225F7107400D542D6 /* MyMapsEntity */ = {
+			isa = PBXGroup;
+			children = (
+				DE555F1325F72C6300D542D6 /* PlaceEntity.swift */,
+			);
+			path = MyMapsEntity;
+			sourceTree = "<group>";
+		};
+		DE555ED325F7107400D542D6 /* MyMapsInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				DE555ED425F7107500D542D6 /* MyMapsInteractor.swift */,
+				DE555EF725F71A5300D542D6 /* InfoAirportsInteractor.swift */,
+			);
+			path = MyMapsInteractor;
+			sourceTree = "<group>";
+		};
+		DE555ED525F7107500D542D6 /* MyMapsRouter */ = {
+			isa = PBXGroup;
+			children = (
+				DE555ED625F7107500D542D6 /* MyMapsRouter.swift */,
+				DE555EFC25F71A8900D542D6 /* InfoAirportsRouter.swift */,
+			);
+			path = MyMapsRouter;
+			sourceTree = "<group>";
+		};
+		DE555ED725F7107500D542D6 /* MyMapsView */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EE725F7156600D542D6 /* cell */,
+				DE555ED825F7107500D542D6 /* MyMapsStoryboard.storyboard */,
+				DE555ED925F7107500D542D6 /* MyMapsViewController.swift */,
+				DE555EF225F716CB00D542D6 /* TabBarVC.swift */,
+				DE555F0125F71B0500D542D6 /* InfoAirportsViewController.swift */,
+			);
+			path = MyMapsView;
+			sourceTree = "<group>";
+		};
+		DE555EDA25F7107500D542D6 /* MyMapsPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EDB25F7107500D542D6 /* MyMapsPresenter.swift */,
+				DE555F0625F71B3500D542D6 /* InfoAirportPresenter.swift */,
+			);
+			path = MyMapsPresenter;
+			sourceTree = "<group>";
+		};
+		DE555EDC25F7107500D542D6 /* MyMapsContracts */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EDD25F7107500D542D6 /* MyMapsContracts.swift */,
+				DE555F0B25F71B5100D542D6 /* InfoAirportContracts.swift */,
+			);
+			path = MyMapsContracts;
+			sourceTree = "<group>";
+		};
+		DE555EE725F7156600D542D6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE555EE825F7157600D542D6 /* FloatingTabBarCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE555E4225F6FD1000D542D6 /* MapTestAl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE555E6D25F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAl" */;
+			buildPhases = (
+				DE555E3F25F6FD1000D542D6 /* Sources */,
+				DE555E4025F6FD1000D542D6 /* Frameworks */,
+				DE555E4125F6FD1000D542D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapTestAl;
+			productName = MapTestAl;
+			productReference = DE555E4325F6FD1000D542D6 /* MapTestAl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE555E5825F6FD1900D542D6 /* MapTestAlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE555E7025F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAlTests" */;
+			buildPhases = (
+				DE555E5525F6FD1900D542D6 /* Sources */,
+				DE555E5625F6FD1900D542D6 /* Frameworks */,
+				DE555E5725F6FD1900D542D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE555E5B25F6FD1900D542D6 /* PBXTargetDependency */,
+			);
+			name = MapTestAlTests;
+			productName = MapTestAlTests;
+			productReference = DE555E5925F6FD1900D542D6 /* MapTestAlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE555E6325F6FD1900D542D6 /* MapTestAlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE555E7325F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAlUITests" */;
+			buildPhases = (
+				DE555E6025F6FD1900D542D6 /* Sources */,
+				DE555E6125F6FD1900D542D6 /* Frameworks */,
+				DE555E6225F6FD1900D542D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE555E6625F6FD1900D542D6 /* PBXTargetDependency */,
+			);
+			name = MapTestAlUITests;
+			productName = MapTestAlUITests;
+			productReference = DE555E6425F6FD1900D542D6 /* MapTestAlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE555E3B25F6FD1000D542D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DE555E4225F6FD1000D542D6 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DE555E5825F6FD1900D542D6 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DE555E4225F6FD1000D542D6;
+					};
+					DE555E6325F6FD1900D542D6 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = DE555E4225F6FD1000D542D6;
+					};
+				};
+			};
+			buildConfigurationList = DE555E3E25F6FD1000D542D6 /* Build configuration list for PBXProject "MapTestAl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE555E3A25F6FD1000D542D6;
+			productRefGroup = DE555E4425F6FD1000D542D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE555E4225F6FD1000D542D6 /* MapTestAl */,
+				DE555E5825F6FD1900D542D6 /* MapTestAlTests */,
+				DE555E6325F6FD1900D542D6 /* MapTestAlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE555E4125F6FD1000D542D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE555E5325F6FD1900D542D6 /* LaunchScreen.storyboard in Resources */,
+				DE555E9F25F6FE9500D542D6 /* AirportRadiusSelectStoryboard.storyboard in Resources */,
+				DE555E5025F6FD1900D542D6 /* Assets.xcassets in Resources */,
+				DE555EE025F7107500D542D6 /* MyMapsStoryboard.storyboard in Resources */,
+				DE555E4E25F6FD1000D542D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E5725F6FD1900D542D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E6225F6FD1900D542D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE555E3F25F6FD1000D542D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE555EE925F7157600D542D6 /* FloatingTabBarCell.swift in Sources */,
+				DE555EA125F6FE9500D542D6 /* AirportRadiusSelectPresenter.swift in Sources */,
+				DE555EBF25F70BA200D542D6 /* RangeSliderOneTrackLayer.swift in Sources */,
+				DE555E4B25F6FD1000D542D6 /* ViewController.swift in Sources */,
+				DE555F0225F71B0500D542D6 /* InfoAirportsViewController.swift in Sources */,
+				DE555E4725F6FD1000D542D6 /* AppDelegate.swift in Sources */,
+				DE555EA925F7024800D542D6 /* ButtonCustom.swift in Sources */,
+				DE555F0725F71B3500D542D6 /* InfoAirportPresenter.swift in Sources */,
+				DE555EF825F71A5300D542D6 /* InfoAirportsInteractor.swift in Sources */,
+				DE555EDE25F7107500D542D6 /* MyMapsInteractor.swift in Sources */,
+				DE555EF325F716CB00D542D6 /* TabBarVC.swift in Sources */,
+				DE555EE325F7107500D542D6 /* MyMapsContracts.swift in Sources */,
+				DE555E9E25F6FE9500D542D6 /* AirportRadiusSelectViewController.swift in Sources */,
+				DE555EDF25F7107500D542D6 /* MyMapsRouter.swift in Sources */,
+				DE555EBA25F70B4A00D542D6 /* RangeSlider.swift in Sources */,
+				DE555F1425F72C6300D542D6 /* PlaceEntity.swift in Sources */,
+				DE555EE225F7107500D542D6 /* MyMapsPresenter.swift in Sources */,
+				DE555EFD25F71A8900D542D6 /* InfoAirportsRouter.swift in Sources */,
+				DE555EA325F6FE9500D542D6 /* AirportRadiusSelectRouter.swift in Sources */,
+				DE555EC425F70BCB00D542D6 /* RangeSliderOneThumbLayer.swift in Sources */,
+				DE555EE125F7107500D542D6 /* MyMapsViewController.swift in Sources */,
+				DE555EEE25F715F900D542D6 /* ProtocolUI.swift in Sources */,
+				DE555EA225F6FE9500D542D6 /* AirportRadiusSelectContracts.swift in Sources */,
+				DE555EB125F702BD00D542D6 /* Shadow.swift in Sources */,
+				DE555F0C25F71B5100D542D6 /* InfoAirportContracts.swift in Sources */,
+				DE555E4925F6FD1000D542D6 /* SceneDelegate.swift in Sources */,
+				DE555EA025F6FE9500D542D6 /* AirportRadiusSelectInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E5525F6FD1900D542D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE555E5E25F6FD1900D542D6 /* MapTestAlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE555E6025F6FD1900D542D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE555E6925F6FD1900D542D6 /* MapTestAlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE555E5B25F6FD1900D542D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE555E4225F6FD1000D542D6 /* MapTestAl */;
+			targetProxy = DE555E5A25F6FD1900D542D6 /* PBXContainerItemProxy */;
+		};
+		DE555E6625F6FD1900D542D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE555E4225F6FD1000D542D6 /* MapTestAl */;
+			targetProxy = DE555E6525F6FD1900D542D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE555E4C25F6FD1000D542D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE555E4D25F6FD1000D542D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE555E5125F6FD1900D542D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE555E5225F6FD1900D542D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE555E6B25F6FD1900D542D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE555E6C25F6FD1900D542D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE555E6E25F6FD1900D542D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE555E6F25F6FD1900D542D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE555E7125F6FD1900D542D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapTestAl.app/MapTestAl";
+			};
+			name = Debug;
+		};
+		DE555E7225F6FD1900D542D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapTestAl.app/MapTestAl";
+			};
+			name = Release;
+		};
+		DE555E7425F6FD1900D542D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MapTestAl;
+			};
+			name = Debug;
+		};
+		DE555E7525F6FD1900D542D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UZFBF348XK;
+				INFOPLIST_FILE = MapTestAlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emimtz.MapTestAlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MapTestAl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE555E3E25F6FD1000D542D6 /* Build configuration list for PBXProject "MapTestAl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE555E6B25F6FD1900D542D6 /* Debug */,
+				DE555E6C25F6FD1900D542D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE555E6D25F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE555E6E25F6FD1900D542D6 /* Debug */,
+				DE555E6F25F6FD1900D542D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE555E7025F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE555E7125F6FD1900D542D6 /* Debug */,
+				DE555E7225F6FD1900D542D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE555E7325F6FD1900D542D6 /* Build configuration list for PBXNativeTarget "MapTestAlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE555E7425F6FD1900D542D6 /* Debug */,
+				DE555E7525F6FD1900D542D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE555E3B25F6FD1000D542D6 /* Project object */;
+}

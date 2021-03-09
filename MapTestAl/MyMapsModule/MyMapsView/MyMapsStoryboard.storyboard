@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Maps View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyMaps" id="BYZ-38-t0r" customClass="MyMapsViewController" customModule="MapTestAl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-qy-TgZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aMz-J2-96g">
+                                <rect key="frame" x="40" y="814" width="334" height="29"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="8wj-r6-gkG"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <color key="tintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="changeLook:" destination="BYZ-38-t0r" eventType="valueChanged" id="PXe-nN-Dw0"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a5E-qy-TgZ" secondAttribute="trailing" id="2It-hF-anc"/>
+                            <constraint firstItem="aMz-J2-96g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="5PP-4R-zJ1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aMz-J2-96g" secondAttribute="bottom" constant="20" id="8E0-Ye-saw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aMz-J2-96g" secondAttribute="trailing" constant="20" id="ROn-ai-DLA"/>
+                            <constraint firstAttribute="bottom" secondItem="a5E-qy-TgZ" secondAttribute="bottom" id="cVC-3S-W38"/>
+                            <constraint firstItem="a5E-qy-TgZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eN6-hD-6lg"/>
+                            <constraint firstItem="a5E-qy-TgZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zUt-nC-OGG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="a5E-qy-TgZ" id="fZ1-93-Eyq"/>
+                        <outlet property="selector" destination="aMz-J2-96g" id="BDh-0F-rbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="89"/>
+        </scene>
+        <!--Info Airport View Controller-->
+        <scene sceneID="Ngb-Ak-8ky">
+            <objects>
+                <viewController storyboardIdentifier="InfoAirport" id="Vwo-S5-6MH" customClass="InfoAirportViewController" customModule="MapTestAl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xh-Nv-A4p"/>
+                        <viewControllerLayoutGuide type="bottom" id="PWX-Ht-bml"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fc-D7-rHU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjw-O3-zRz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
