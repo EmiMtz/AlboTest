@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="MapTestAl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weM-t4-htw" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-tQ-IGO">
+                                        <rect key="frame" x="363" y="50" width="36" height="47"/>
+                                        <state key="normal" image="ic_location"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8oT-tQ-IGO" firstAttribute="top" secondItem="weM-t4-htw" secondAttribute="top" constant="50" id="L0a-mi-Hda"/>
+                                    <constraint firstAttribute="trailing" secondItem="8oT-tQ-IGO" secondAttribute="trailing" constant="15" id="qFb-Jw-V3y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="weM-t4-htw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F0Q-eF-Fvd"/>
+                            <constraint firstItem="weM-t4-htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAg-Iy-TWA"/>
+                            <constraint firstAttribute="bottom" secondItem="weM-t4-htw" secondAttribute="bottom" id="bAQ-XM-XwW"/>
+                            <constraint firstAttribute="trailing" secondItem="weM-t4-htw" secondAttribute="trailing" id="jNc-AR-uoY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLocationBtn" destination="8oT-tQ-IGO" id="Wkg-Rs-kFH"/>
+                        <outlet property="myMap" destination="weM-t4-htw" id="sW5-4X-ff9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_location" width="36" height="46.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
