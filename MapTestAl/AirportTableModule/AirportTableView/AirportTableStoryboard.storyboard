@@ -86,7 +86,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dVs-9A-ZjT"/>
                                 </constraints>
-                                <state key="normal" title="Cambiar el radio"/>
+                                <state key="normal" title="Change the radio"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundNormalColor">
                                         <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,7 +138,7 @@
     </scenes>
     <designables>
         <designable name="2wT-Se-ixD">
-            <size key="intrinsicContentSize" width="112" height="30"/>
+            <size key="intrinsicContentSize" width="118" height="30"/>
         </designable>
     </designables>
     <resources>
