@@ -37,7 +37,9 @@ class AirportRadiusSelectViewController: UIViewController,AirportRadiusSelectVie
         let item1 = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
         mapsVC.tabBarItem = item1
         
-        let infoAirportsVC = AirportListRouter.createModule(radious: radious)
+        let infoAirportsVC = AirportTableRouter.createModule(radious: radious, userLocation: userDetail) as! AirportTableViewController
+        infoAirportsVC.lat = userDetail.lat ?? 0.0
+        infoAirportsVC.lng = userDetail.lng ?? 0.0
         let item2 = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         infoAirportsVC.tabBarItem = item2
         

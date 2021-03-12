@@ -15,8 +15,8 @@ class AirportRadiusSelectRouter: AirportRadiusSelectRouterProtocol {
     static func createModule() -> UIViewController {
         let s = mainstoryboard
         let view = s.instantiateViewController(withIdentifier: "AirportRadiusSelect") as! AirportRadiusSelectViewControllerProtocol
-        var presenter: AirportRadiusSelectPresenterProtocol & AirportRadiusSelectInteractorOutputProtocol = AirportRadiusSelectPresenter()
-        var interactor:AirportRadiusSelectInteractorProtocol = AirportRadiusSelectInteractor()
+        let presenter: AirportRadiusSelectPresenterProtocol & AirportRadiusSelectInteractorOutputProtocol = AirportRadiusSelectPresenter()
+        let interactor:AirportRadiusSelectInteractorProtocol = AirportRadiusSelectInteractor()
         var router: AirportRadiusSelectRouterProtocol = AirportRadiusSelectRouter()
         
         view.presenter = presenter

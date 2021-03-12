@@ -50,8 +50,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-YB-LVA" customClass="ButtonCustom" customModule="MapTestAl" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="573" width="300" height="30"/>
+                                <rect key="frame" x="37.5" y="553" width="300" height="50"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ngU-6O-AQO"/>
+                                </constraints>
                                 <state key="normal" title="SEARCH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>

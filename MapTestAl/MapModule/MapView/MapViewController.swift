@@ -68,60 +68,6 @@ class MapViewController: UIViewController,MapViewControllerProtocol, CLLocationM
         self.lat = locValue.latitude
         self.lng = locValue.longitude
     }
-    
-//    /// Manera en que será presentada la ubicación del usuario al presionar los botones correspondientes.
-//    func showMyLocation(){
-//        let location : CLLocation? = determineUserCurrentLocation()
-//        if location != nil {
-//            guard let lat = self.myMap.myLocation?.coordinate.latitude,
-//                let lng = self.myMap.myLocation?.coordinate.longitude else { return }
-//            
-//            let long = Double(lng)
-//            let lati = Double(lat)
-//            let camera = GMSCameraPosition.camera(withLatitude: lat ,longitude: lng , zoom: 14)
-//            self.myMap.camera = camera
-//            self.myMap.animate(to: camera)
-//            self.myMap.clear()
-//            let marker = GMSMarker()
-//            marker.position = camera.target
-//            marker.icon = #imageLiteral(resourceName: "ic_location")
-//            marker.appearAnimation = GMSMarkerAnimation.none
-//            //marker.map = mapView
-//            self.presenter?.searchDirection(long: long, lat: lati, languaje: "es", radius: nil)
-//            print("hola")
-//        }else {
-//            self.showErrorMessage(title: "Current location".localized(), message: "MS47".localized()) {
-//                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
-//                    return
-//                }
-//                if UIApplication.shared.canOpenURL(settingsUrl) {
-//                    UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-//                        print("Settings opened: \(success)") // Prints true
-//                    })
-//                }
-//            }
-//            print("ERROR AL OBTENER LA UBICACION DEL USUARIO")
-//        }
-//    }
-    
-    /// Activa los valores para identificar el valor de ubicación del usuario.
-    func determineUserCurrentLocation()->CLLocation?{
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        if #available(iOS 13.0, *) {
-            locationManager.requestAlwaysAuthorization()
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-        }
-        
-        if CLLocationManager.locationServicesEnabled() {
-            return locationManager.location
-        }
-        else{
-            return nil
-        }
-    }
-    
 }
 
 extension MapViewController: GMSMapViewDelegate{
@@ -149,7 +95,6 @@ extension MapViewController {
                 marker.map = myMap
             })
         }
-        print(airports)
     }
 }
 

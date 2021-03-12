@@ -10,5 +10,5 @@ import GoogleMaps
 
 class Constants{
     // GOOGLE API
-    static let googleApiKey = "AIzaSyBleVcsyPjPspWSxHmoURX3av-7bN4HvLA"
+    static let googleApiKey = "AIzaSyDXg4qjxLEsnmdkxZGbQ47ppwbkqouhHlM"
 }

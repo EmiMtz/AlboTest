@@ -170,7 +170,7 @@ class RequestManager {
             completion(nil,CodeResponse.not_connection,tag)
             return
         }
-        var urlRequest:URLRequest = URLRequest(url: urlForRequest)
+        let urlRequest:URLRequest = URLRequest(url: urlForRequest)
         
         print(urlRequest)
         

@@ -19,19 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weM-t4-htw" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-Ya-x5k">
+                                <rect key="frame" x="363" y="74" width="36" height="47"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-tQ-IGO">
-                                        <rect key="frame" x="363" y="50" width="36" height="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="47"/>
                                         <state key="normal" image="ic_location"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="8oT-tQ-IGO" firstAttribute="top" secondItem="weM-t4-htw" secondAttribute="top" constant="50" id="L0a-mi-Hda"/>
-                                    <constraint firstAttribute="trailing" secondItem="8oT-tQ-IGO" secondAttribute="trailing" constant="15" id="qFb-Jw-V3y"/>
+                                    <constraint firstItem="8oT-tQ-IGO" firstAttribute="leading" secondItem="fTc-Ya-x5k" secondAttribute="leading" id="Ocx-Zu-9Se"/>
+                                    <constraint firstAttribute="bottom" secondItem="8oT-tQ-IGO" secondAttribute="bottom" id="aYQ-9i-HTJ"/>
+                                    <constraint firstItem="8oT-tQ-IGO" firstAttribute="top" secondItem="fTc-Ya-x5k" secondAttribute="top" id="gDI-ME-92a"/>
+                                    <constraint firstAttribute="trailing" secondItem="8oT-tQ-IGO" secondAttribute="trailing" id="uBh-D5-Dti"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weM-t4-htw" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +45,9 @@
                             <constraint firstItem="weM-t4-htw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F0Q-eF-Fvd"/>
                             <constraint firstItem="weM-t4-htw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAg-Iy-TWA"/>
                             <constraint firstAttribute="bottom" secondItem="weM-t4-htw" secondAttribute="bottom" id="bAQ-XM-XwW"/>
+                            <constraint firstAttribute="trailing" secondItem="fTc-Ya-x5k" secondAttribute="trailing" constant="15" id="ibK-hk-5Y8"/>
                             <constraint firstAttribute="trailing" secondItem="weM-t4-htw" secondAttribute="trailing" id="jNc-AR-uoY"/>
+                            <constraint firstItem="fTc-Ya-x5k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="xZe-bN-gde"/>
                         </constraints>
                     </view>
                     <connections>
